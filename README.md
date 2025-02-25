@@ -50,6 +50,13 @@
       INSERT INTO Employee (EmployeeId, LastName, FirstName, Address, City, Designation, YOE) VALUES (2, ’Mehta’, ‘Govind’, ’somewhere’ , ’somewhere’ ,’Associate’, 10);
       INSERT INTO Employee (EmployeeId, LastName, FirstName, Address, City, Designation, YOE) VALUES (3, ’Wilmer’, ‘Rob’,’somewhere’ , ’somewhere’ ,’Manager’, 20);
 
+### Kafka connect
+  - Image pull: docker pull quay.io/debezium/connect:latest
+  - Start: $ docker run -it --rm --name connect -p 8083:8083 -e GROUP_ID=1 -e CONFIG_STORAGE_TOPIC=my_connect_configs -e OFFSET_STORAGE_TOPIC=my_connect_offsets -e STATUS_STORAGE_TOPIC=my_connect_statuses --link kafka:kafka --link mysql:mysql quay.io/debezium/connect:latest
+#### Check if any connector is registered
+  - curl -H "Accept:application/json" localhost:8083/connectors/
+
+### Deploying Debezium MySQL connector
 
 
 
