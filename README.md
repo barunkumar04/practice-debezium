@@ -36,15 +36,15 @@
       - create databse practice;
       - use database practice;
       - create table
-      CREATE TABLE Employee (
-        EmployeeId int,
-        LastName varchar(255),
-        FirstName varchar(255),
-        Address varchar(255),
-        City varchar(255),
-        Designation varchar(30),
-        YOE int 
-      );
+          CREATE TABLE Employee (
+          EmployeeId int,
+          LastName varchar(255),
+          FirstName varchar(255),
+          Address varchar(255),
+          City varchar(255),
+          Designation varchar(30),
+          YOE int 
+          );
      - insert data
       INSERT INTO Employee (EmployeeId, LastName, FirstName, Address, City, Designation, YOE) VALUES (1, ’Wood’, ‘John’, ’somewhere’ , ’somewhere’ ,’Associate’, 10);
       INSERT INTO Employee (EmployeeId, LastName, FirstName, Address, City, Designation, YOE) VALUES (2, ’Mehta’, ‘Govind’, ’somewhere’ , ’somewhere’ ,’Associate’, 10);
